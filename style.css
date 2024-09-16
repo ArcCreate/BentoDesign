@@ -1,0 +1,10 @@
+:root{
+  --lightpurple-color: hsl(254, 88%, 90%);
+  --darkpruple-color2: hsl(256, 67%, 59%);
+  
+  --lightYellow-color: hsl(31, 66%, 93%);
+  --darkYellow-color: hsl(39, 100%, 71%);
+  
+  --white-color: hsl(0, 0%, 100%);
+  --black-color: hsl(0, 0%, 7%);
+}
