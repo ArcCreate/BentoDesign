@@ -1,10 +1,68 @@
 :root{
   --lightpurple-color: hsl(254, 88%, 90%);
-  --darkpruple-color2: hsl(256, 67%, 59%);
+  --darkpruple-color: hsl(256, 67%, 59%);
   
   --lightYellow-color: hsl(31, 66%, 93%);
   --darkYellow-color: hsl(39, 100%, 71%);
   
   --white-color: hsl(0, 0%, 100%);
   --black-color: hsl(0, 0%, 7%);
+}
+
+.grid{
+  width: 80%;
+  display: grid;
+  grid-auto-columns: repeat(4, 1fr);
+  grid-auto-rows: repeat(10, 1fr);
+  gap: 20px;
+  margin: auto;
+  background-color: black;
+}
+
+.box1{
+  background-color: var(--lightYellow-color);
+  grid-column: 1;
+  grid-row: 1 / 6;
+}
+
+.box2{
+  background-color: var(--darkYellow-color);
+  grid-row: 6 / 11;
+  grid-column: 1;
+}
+
+.box3{
+  background-color: var(--darkpruple-color);
+  grid-row: 1 / 5;
+  grid-column: 2 / 4;
+}
+
+.box4{
+  background-color: var(--white-color);
+  grid-row: 5 / 8;
+  grid-column: 2;
+}
+
+.box5{
+  background-color: var(--white-color);
+  grid-row: 8 / 11;
+  grid-column: 2;
+}
+
+.box6{
+  background-color: var(--darkYellow-color);
+  grid-row: 5 / 8;
+  grid-column: 3;
+}
+
+.box7{
+  background-color: var(--darkpruple-color);
+  grid-row: 8 / 11;
+  grid-column: 3 / 5;
+}
+
+.box8{
+  background-color: var(--lightpurple-color);
+  grid-column: 4;
+  grid-row: 1 / 8;
 }
